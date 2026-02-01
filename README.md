@@ -21,28 +21,26 @@
 
 ## 安裝步驟
 
-### 1. 安裝 notebooklm-py
-
-```bash
-pip install notebooklm-py
-pip install "notebooklm-py[browser]"
-playwright install chromium
-```
-
-### 2. 下載專案
+### 1. 下載專案
 
 ```bash
 git clone https://github.com/ChatGPT3a01/notebooklm-automation.git
 cd notebooklm-automation
 ```
 
-### 3. 安裝依賴
+或直接下載 ZIP：點擊上方綠色「Code」按鈕 → Download ZIP → 解壓縮
+
+### 2. 安裝依賴
 
 ```bash
 pip install -r requirements.txt
+playwright install chromium
 ```
 
-### 4. Google 帳號登入
+> 這會自動安裝 Flask、notebooklm-py 等所有必要套件。
+> Chromium 下載約 200MB，請確保網路穩定。
+
+### 3. Google 帳號登入
 
 ```bash
 notebooklm login
@@ -50,13 +48,13 @@ notebooklm login
 
 執行後會開啟瀏覽器，完成 Google 帳號登入後，在終端機按 Enter 確認。
 
-### 5. 啟動應用程式
+### 4. 啟動應用程式
 
 ```bash
 python app.py
 ```
 
-### 6. 開啟瀏覽器
+### 5. 開啟瀏覽器
 
 訪問 http://localhost:5000
 
